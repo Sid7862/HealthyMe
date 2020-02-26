@@ -30,6 +30,8 @@ class Profile: Object
       @objc dynamic var prof_blood_grp = "";
       @objc dynamic var prof_dob = "";
       @objc dynamic var prof_gender = "";
+     @objc dynamic var prof_isActive = "";
+
 
       override static func primaryKey() -> String? {
         return "prof_mobile";
