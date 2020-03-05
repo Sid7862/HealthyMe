@@ -8,10 +8,13 @@
 
 import UIKit
 import SwiftUI
+import RealmSwift
+import UserNotifications
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+   
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,6 +23,53 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
+        
+        /*
+        let config = Realm.Configuration(
+                   // Set the new schema version. This must be greater than the previously used
+                   // version (if you've never set a schema version before, the version is 0).
+                 // change to previous version = 2 -> 3
+                // change to current version = 5 -> 6
+                   schemaVersion: 1,
+                   
+                   // Set the block which will be called automatically when opening a Realm with
+                   // a schema version lower than the one set above
+                   migrationBlock: { migration, oldSchemaVersion in
+                       
+                       // We haven’t migrated anything yet, so oldSchemaVersion == 0
+                       if (oldSchemaVersion == 0) {
+                           // Nothing to do!
+                           // Realm will automatically detect new properties and removed properties
+                           // And will update the schema on disk automatically
+                       }
+                       
+
+                      
+               })
+               
+               // Tell Realm to use this new configuration object for the default Realm
+               Realm.Configuration.defaultConfiguration = config
+        
+        */
+        
+        let notificationCenter =  UNUserNotificationCenter.current()
+        
+        let options: UNAuthorizationOptions = [.alert, .sound, .badge]
+        
+        notificationCenter.requestAuthorization(options: options) {
+            (didAllow, error) in
+            if !didAllow {
+                print("User has declined notifications")
+            }
+        }
+        
+        notificationCenter.getNotificationSettings { (settings) in
+          if settings.authorizationStatus != .authorized {
+            // Notifications not allowed
+          }
+        } 
+        
+        
         let contentView = IntroView()
 
         // Use a UIHostingController as window root view controller.
