@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		42C267F8FB1FF82481C3C6B3 /* Pods_HealthyMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E6BEA37B638C44C8678899 /* Pods_HealthyMe.framework */; };
+		BA4D827524072BCC0022A4C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D826F24072BCC0022A4C1 /* Constants.swift */; };
+		BA4D827624072BCC0022A4C1 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D827024072BCC0022A4C1 /* KeychainManager.swift */; };
+		BA4D827724072BCC0022A4C1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D827124072BCC0022A4C1 /* AppColors.swift */; };
+		BA4D827924072BCC0022A4C1 /* ActyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D827324072BCC0022A4C1 /* ActyIndicator.swift */; };
+		BA619C7A241167EC0084D5C0 /* AddMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA619C79241167EC0084D5C0 /* AddMedicine.swift */; };
+		BA619C7C241177090084D5C0 /* days.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA619C7B241177090084D5C0 /* days.swift */; };
 		BA68C8152402C289003EE01B /* RegisterUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68C8142402C289003EE01B /* RegisterUI.swift */; };
 		BAAD102E24030776009DA3CC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102D24030776009DA3CC /* Profile.swift */; };
 		BAAD103024030BAA009DA3CC /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102F24030BAA009DA3CC /* Gender.swift */; };
@@ -33,6 +39,12 @@
 		0CCC38AF7194E52E27F91C63 /* Pods-HealthyMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyMe.debug.xcconfig"; path = "Target Support Files/Pods-HealthyMe/Pods-HealthyMe.debug.xcconfig"; sourceTree = "<group>"; };
 		87E6BEA37B638C44C8678899 /* Pods_HealthyMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8D4613AE21671016B777A4 /* Pods-HealthyMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyMe.release.xcconfig"; path = "Target Support Files/Pods-HealthyMe/Pods-HealthyMe.release.xcconfig"; sourceTree = "<group>"; };
+		BA4D826F24072BCC0022A4C1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA4D827024072BCC0022A4C1 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		BA4D827124072BCC0022A4C1 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		BA4D827324072BCC0022A4C1 /* ActyIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActyIndicator.swift; sourceTree = "<group>"; };
+		BA619C79241167EC0084D5C0 /* AddMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicine.swift; sourceTree = "<group>"; };
+		BA619C7B241177090084D5C0 /* days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = days.swift; sourceTree = "<group>"; };
 		BA68C8142402C289003EE01B /* RegisterUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUI.swift; sourceTree = "<group>"; };
 		BAAD102D24030776009DA3CC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		BAAD102F24030BAA009DA3CC /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
@@ -76,6 +88,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA4D826E24072BCC0022A4C1 /* MyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BA4D826F24072BCC0022A4C1 /* Constants.swift */,
+				BA4D827024072BCC0022A4C1 /* KeychainManager.swift */,
+				BA4D827124072BCC0022A4C1 /* AppColors.swift */,
+				BA4D827324072BCC0022A4C1 /* ActyIndicator.swift */,
+				BA619C7B241177090084D5C0 /* days.swift */,
+			);
+			path = MyUtils;
+			sourceTree = "<group>";
+		};
 		BAAD102A2403051D009DA3CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +122,7 @@
 				D6EB73C624012B8800E41A09 /* TestUIView.swift */,
 				D6EB73CA2401347D00E41A09 /* AddFamilyMemberUI.swift */,
 				BA68C8142402C289003EE01B /* RegisterUI.swift */,
+				BA619C79241167EC0084D5C0 /* AddMedicine.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +148,7 @@
 		D6F4C6EA23F90E3300E54331 /* HealthyMe */ = {
 			isa = PBXGroup;
 			children = (
+				BA4D826E24072BCC0022A4C1 /* MyUtils */,
 				BAAD102A2403051D009DA3CC /* Model */,
 				D678D4A123F9BAEB0010D6F0 /* View */,
 				D6F4C6ED23F90E3300E54331 /* SceneDelegate.swift */,
@@ -270,17 +296,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6EB73C724012B8800E41A09 /* TestUIView.swift in Sources */,
+				BA4D827524072BCC0022A4C1 /* Constants.swift in Sources */,
 				BAAD102E24030776009DA3CC /* Profile.swift in Sources */,
 				D639EB7923FF08BC00611D2B /* SideMenuUI.swift in Sources */,
 				BA68C8152402C289003EE01B /* RegisterUI.swift in Sources */,
+				BA619C7A241167EC0084D5C0 /* AddMedicine.swift in Sources */,
 				D6F4C6EC23F90E3300E54331 /* AppDelegate.swift in Sources */,
 				D639EB7B24003D0000611D2B /* BaseSwiftUI.swift in Sources */,
+				BA619C7C241177090084D5C0 /* days.swift in Sources */,
 				D6EB73C524011E6200E41A09 /* MainBaseView.swift in Sources */,
+				BA4D827724072BCC0022A4C1 /* AppColors.swift in Sources */,
 				D678D4A423F9BB220010D6F0 /* DashboardView.swift in Sources */,
 				D6EB73CB2401347D00E41A09 /* AddFamilyMemberUI.swift in Sources */,
+				BA4D827924072BCC0022A4C1 /* ActyIndicator.swift in Sources */,
 				D639EB7D24003FD500611D2B /* Dashboard.swift in Sources */,
 				D6F4C70023F95D0E00E54331 /* RegisterView.swift in Sources */,
 				D6F4C6EE23F90E3300E54331 /* SceneDelegate.swift in Sources */,
+				BA4D827624072BCC0022A4C1 /* KeychainManager.swift in Sources */,
 				BAAD103024030BAA009DA3CC /* Gender.swift in Sources */,
 				D639EB7F2400423100611D2B /* Test.swift in Sources */,
 				D6F4C6F023F90E3300E54331 /* IntroView.swift in Sources */,
