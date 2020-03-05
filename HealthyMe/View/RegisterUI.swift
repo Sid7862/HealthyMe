@@ -118,9 +118,15 @@ struct RegisterUI: View {
                     }
                 }
                 
-                DatePicker(selection: $birthday, in: ...Date(), displayedComponents: .date) {
-                Text("Birthday")
+                    DatePicker(selection: $birthday, in: ...Date(), displayedComponents: .date) {
+                    Text("Birthday")
                 }
+                    
+                    Picker("Gender", selection: $selectedGenderIndex) {
+                        ForEach(0..<genderOptions.count) {
+                            Text(self.genderOptions[$0])
+                        }
+                    }
                         }
                 }
                 
