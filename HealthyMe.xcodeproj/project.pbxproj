@@ -14,6 +14,7 @@
 		BA4D827924072BCC0022A4C1 /* ActyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D827324072BCC0022A4C1 /* ActyIndicator.swift */; };
 		BA619C7A241167EC0084D5C0 /* AddMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA619C79241167EC0084D5C0 /* AddMedicine.swift */; };
 		BA619C7C241177090084D5C0 /* days.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA619C7B241177090084D5C0 /* days.swift */; };
+		BA619C7E2412E48D0084D5C0 /* AddUserUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA619C7D2412E48D0084D5C0 /* AddUserUI.swift */; };
 		BA68C8152402C289003EE01B /* RegisterUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68C8142402C289003EE01B /* RegisterUI.swift */; };
 		BAAD102E24030776009DA3CC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102D24030776009DA3CC /* Profile.swift */; };
 		BAAD103024030BAA009DA3CC /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102F24030BAA009DA3CC /* Gender.swift */; };
@@ -45,6 +46,7 @@
 		BA4D827324072BCC0022A4C1 /* ActyIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActyIndicator.swift; sourceTree = "<group>"; };
 		BA619C79241167EC0084D5C0 /* AddMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicine.swift; sourceTree = "<group>"; };
 		BA619C7B241177090084D5C0 /* days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = days.swift; sourceTree = "<group>"; };
+		BA619C7D2412E48D0084D5C0 /* AddUserUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserUI.swift; sourceTree = "<group>"; };
 		BA68C8142402C289003EE01B /* RegisterUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUI.swift; sourceTree = "<group>"; };
 		BAAD102D24030776009DA3CC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		BAAD102F24030BAA009DA3CC /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				D6EB73CA2401347D00E41A09 /* AddFamilyMemberUI.swift */,
 				BA68C8142402C289003EE01B /* RegisterUI.swift */,
 				BA619C79241167EC0084D5C0 /* AddMedicine.swift */,
+				BA619C7D2412E48D0084D5C0 /* AddUserUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				D6F4C6EC23F90E3300E54331 /* AppDelegate.swift in Sources */,
 				D639EB7B24003D0000611D2B /* BaseSwiftUI.swift in Sources */,
 				BA619C7C241177090084D5C0 /* days.swift in Sources */,
+				BA619C7E2412E48D0084D5C0 /* AddUserUI.swift in Sources */,
 				D6EB73C524011E6200E41A09 /* MainBaseView.swift in Sources */,
 				BA4D827724072BCC0022A4C1 /* AppColors.swift in Sources */,
 				D678D4A423F9BB220010D6F0 /* DashboardView.swift in Sources */,
