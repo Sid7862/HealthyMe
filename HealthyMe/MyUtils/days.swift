@@ -59,6 +59,7 @@ class days
              dateFormatter.dateFormat = "MMM"
              out.month = (dateFormatter.string(from: date))
              array.append(out)
+            
 
             }
            return array
