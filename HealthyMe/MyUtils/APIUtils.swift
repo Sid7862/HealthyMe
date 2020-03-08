@@ -8,12 +8,6 @@
 
 import UIKit
 
-enum idType {
-   
-    case medicineID
-    case PrescriptionID
-
-}
 
 class APIUtils {
     
@@ -47,10 +41,8 @@ class APIUtils {
         return header;
     }
     
-    public static func generateUniqueID(type: String)->String
-    {
-      let randomInt = arc4random_uniform(1000000);
-      return "\(randomInt)\(Date().timeIntervalSince1970)"
-    }
+    
+    
 
 }
+
