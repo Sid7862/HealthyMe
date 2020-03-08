@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import UIKit
 
-class Profile: Object
+class ProfileModel: Object
 {
   
       @objc dynamic var prof_name = "";
@@ -30,11 +30,13 @@ class Profile: Object
       @objc dynamic var prof_blood_grp = "";
       @objc dynamic var prof_dob = "";
       @objc dynamic var prof_gender = "";
-     @objc dynamic var prof_isActive = "";
+      @objc dynamic var prof_isActive = "";
+      @objc dynamic var prof_id = AppUtils.generateUniqueID(type: idType.userID);
+
 
 
       override static func primaryKey() -> String? {
-        return "prof_mobile";
+        return "prof_id";
     }
     
 }
