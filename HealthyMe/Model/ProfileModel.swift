@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import UIKit
 
-class ProfileModel: Object
+class ProfileModel: Object, Identifiable
 {
   
       @objc dynamic var prof_name = "";
