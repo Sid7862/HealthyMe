@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct AddUserUI: View {
     
@@ -92,7 +93,65 @@ struct AddUserUI: View {
                     
                   print(Gender.genderID(valueString: Constants.genderOptions[self.selectedGenderIndex]))
                   print(BloodGroup.bloodGroupID(valueString: Constants.bloodGroup[self.selectedBloodGroupIndex]))
+                    
+                    
+                 DispatchQueue.global(qos: .background).async
+                        {
+                        
+                        
+                            let realm = try! Realm();
+                                  
+                            let self_profile = "0";
+                            if let profile = realm.objects(ProfileModel.self).filter("self_profile == '\(self_profile)'").first
+                             
+                            {
+                                let profileModel = ProfileModel();
+                                profileModel.prof_name = self.name
+                                profileModel.self_profile = profile.prof_id
+                                profileModel.prof_image = ""
+                                profileModel.email = ""
+                                profileModel.prof_relationship = Relationship.realationshipID(valueString: Constants.realationShip[self.selectedRealationshipIndex])
+                                profileModel.prof_blood_grp = BloodGroup.bloodGroupID(valueString: Constants.bloodGroup[self.selectedBloodGroupIndex])
+                                profileModel.prof_dob = self.birthday
+                                profileModel.prof_gender = Gender.genderID(valueString: Constants.genderOptions[self.selectedGenderIndex])
+                            }
+                            else
+                            {
+                                let profileModel = ProfileModel();
+                                profileModel.prof_name = self.name
+                                profileModel.self_profile = self_profile
+                                profileModel.prof_image = ""
+                                profileModel.email = ""
+                                profileModel.prof_relationship = Relationship.realationshipID(valueString: Constants.realationShip[self.selectedRealationshipIndex])
+                                profileModel.prof_blood_grp = BloodGroup.bloodGroupID(valueString: Constants.bloodGroup[self.selectedBloodGroupIndex])
+                                
+                                profileModel.prof_dob = self.birthday
+                                profileModel.prof_gender = Gender.genderID(valueString: Constants.genderOptions[self.selectedGenderIndex])
+                                do {
+                                try realm.write {
+                                                             
+                                    realm.add(profileModel, update: .modified)
+                                    
+                                }
+                                   }
+                                catch let error as NSError
+                                {
+                                    print(error.description)
+                                }
+                            }
+                            
+                         
 
+                            
+                      
+                            
+                      
+                           
+
+                            
+                       
+                           
+                    }
             
                    
                     
