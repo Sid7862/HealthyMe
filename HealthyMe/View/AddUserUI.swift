@@ -25,29 +25,45 @@ struct AddUserUI: View {
 
     var body: some View {
         
+        NavigationView
+            {
         ZStack
             {
                 Color.gray.edgesIgnoringSafeArea(.top)
                 
              
-           Form{
+           Form
+            {
            
            Section(header: Text("Personal")) {
-               TextField("Full name", text: $name)
-            //TextField("Your age", text: $age).keyboardType(.numberPad)
             
-            Picker("RelationShip", selection: $selectedRealationshipIndex) {
+            VStack(alignment: .leading)
+                {
+                Text("Name").font(.headline)
+                 TextField("Enter Fullname", text: $name)
+//                LabelTextField(label: "Name", placeHolder: "Enter Fullname", textValue: $name
+//                    )
+            }
+              
+               
+            
+            Picker("RelationShip", selection: $selectedRealationshipIndex)
+            {
                ForEach(0..<Constants.realationShip.count)
                {
                                              Text(Constants.realationShip[$0])
-                                         }
-                                     }
+                }
+            }
             
             Picker("Gender", selection: $selectedGenderIndex) {
                        ForEach(0..<Constants.genderOptions.count) {
                               Text(Constants.genderOptions[$0])
                           }
+                
+                
                       }
+          
+
                       
             DatePicker(selection: $birthday, in: ...Date(), displayedComponents: .date) {
                           Text("Birthday")
@@ -70,7 +86,15 @@ struct AddUserUI: View {
             
            }
                 
+                RoundedRectangle(cornerRadius: 10)
+                                               .foregroundColor(.white).shadow(color: .white, radius: 10, x: 1, y: 0).frame(width: UIScreen.main.bounds.width-80, height: 50, alignment: .center)
                 Button(action: {
+                    
+                  print(Gender.genderID(valueString: Constants.genderOptions[self.selectedGenderIndex]))
+                  print(BloodGroup.bloodGroupID(valueString: Constants.bloodGroup[self.selectedBloodGroupIndex]))
+
+            
+                   
                     
                 })
                 {
@@ -79,9 +103,29 @@ struct AddUserUI: View {
           
         
         }
+        .navigationBarTitle("Add Profile",displayMode: .inline)
+                
+        }
         
     }
 }
+//struct LabelTextField : View {
+//    var label: String
+//    var placeHolder: String
+//    @Binding var textValue: String
+//
+//    var body: some View {
+//
+//        VStack(alignment: .leading) {
+//            Text(label).font(.headline)
+//            TextField(placeHolder,text: $textValue)
+//                .padding()
+//                .background(Color.init(red: 239.0, green: 243.0, blue: 244.0))
+//                .cornerRadius(5.0)
+//        }
+//    }
+//}
+
 
 struct AddUserUI_Previews: PreviewProvider {
     static var previews: some View {

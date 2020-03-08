@@ -19,9 +19,9 @@ enum Gender: String
 
 extension Gender
 {
-    static func genderID(value: Gender.RawValue) -> String {
+    static func genderID(valueString: Gender.RawValue) -> String {
            
-        switch(value){
+        switch(valueString){
             
         case Gender.Male.rawValue:
                 return "1"

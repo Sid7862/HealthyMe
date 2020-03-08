@@ -8,39 +8,38 @@
 
 
 enum BloodGroup: String {
-    case APostive = "A+"
-    case BPostive = "B+"
-    case ANegative = "A-"
-    case BNegvative = "B-"
-    case ABPostive = "AB+"
-    case ABNegvative = "AB-"
-    case OPositive = "O+"
-    case ONegative = "O-"
+    case APostive    =  "A+"
+    case BPostive    =  "B+"
+    case ANegative   =  "A-"
+    case BNegvative  =  "B-"
+    case ABPostive   =  "AB+"
+    case ABNegvative =  "AB-"
+    case OPositive   =  "O+"
+    case ONegative   =  "O-"
     
 }
 
 extension BloodGroup
 {
-    static func bloodGroupID(value: BloodGroup.RawValue) -> String {
+    static func bloodGroupID(valueString: BloodGroup.RawValue) -> String {
            
-        switch(value){
+        switch(valueString){
             
-        case BloodGroup.APostive.RawValue:
+        case BloodGroup.APostive.rawValue:
                 return "1"
-        case BloodGroup.BPostive.RawValue:
+        case BloodGroup.BPostive.rawValue:
                 return "2"
-        case BloodGroup.ANegative.RawValue:
+        case BloodGroup.ANegative.rawValue:
                 return "3"
-        case BloodGroup.BNegvative.RawValue:
+        case BloodGroup.BNegvative.rawValue:
                 return "4"
-        case BloodGroup.ABPostive.RawValue
-            :
+        case BloodGroup.ABPostive.rawValue:
                 return "5"
-        case BloodGroup.ABNegvative.RawValue:
+        case BloodGroup.ABNegvative.rawValue:
                 return "6"
-        case BloodGroup.OPositive.RawValue:
+        case BloodGroup.OPositive.rawValue:
                 return "7"
-        case BloodGroup.ONegative.RawValue:
+        case BloodGroup.ONegative.rawValue:
                 return "8"
         default:
                 return ""
