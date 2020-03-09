@@ -58,7 +58,7 @@ struct SideMenuUI: View {
                         HStack
                         {
                             Image("\(menu.menuImage)").resizable().frame(width: 30, height: 30, alignment: .leading)
-                            Text(menu.menuText).font(.title).frame(alignment: .leading)
+                            Text(menu.menuText).font(.subheadline).font(Font.system(size: 15.0)).frame(alignment: .leading)
                         }
                     }
                     

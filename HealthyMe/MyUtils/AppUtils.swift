@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import RealmSwift
 
 enum idType {
    
@@ -35,4 +37,43 @@ public static func generateUniqueID(type: idType)->String
     
    }
 }
+    public static func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+    
+    public static func getAllserUser() -> Results<ProfileModel>
+       {
+           let realm = try! Realm()
+           let users = realm.objects(ProfileModel.self);
+           return users;
+       }
+       
+    public static func getMainUser() -> ProfileModel?
+          {
+              let realm = try! Realm()
+             guard let user = realm.objects(ProfileModel.self).filter("self_profile == '\(0)'").first else
+             {
+                return nil
+             }
+            return user
+          }
+          
 }

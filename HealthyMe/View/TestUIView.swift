@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TestUIView: View {
     @State var showMenu = true
+    @State var mainuser : ProfileModel? = AppUtils.getMainUser()
     var body: some View {
        
          MainBaseView(content:
@@ -48,8 +49,40 @@ struct TestUIView: View {
                                         }
                                         
 
-                                }//.padding()
-                                // .background(Color.white)
+                                 }.offset( y: 10.0)
+                    
+                    VStack{
+                        Text(mainuser != nil ? "\(mainuser!.prof_name)" : "Welcome" ).font(Font.system(size: 15.0)).foregroundColor(.black).fontWeight(.bold)
+                                   HStack
+                                       {
+                                           VStack{
+                                               Image("family_members").resizable().frame(width: 100, height: 100, alignment: .center)
+                                               Text("family_members").foregroundColor(.black)
+                                           }
+                                           
+                                           Spacer()
+                                           
+                                           VStack{
+                                           Image("prescription").resizable().frame(width: 100, height: 100, alignment: .center)
+                                           Text("prescription").foregroundColor(.black)
+                                           }
+                                   }.padding([.leading,.trailing],40.0)
+                                   HStack
+                                       {
+                                           VStack{
+                                               Image("doctors").resizable().frame(width: 100, height: 100, alignment: .center)
+                                               Text("doctors").foregroundColor(.black)
+                                           }
+                                            Spacer()
+                                           VStack{
+                                           Image("medicines").resizable().frame(width: 100, height: 100, alignment: .center)
+                                           Text("medicines").foregroundColor(.black)
+                                           }
+                                   }.padding([.leading,.trailing],40.0)
+                                   
+                                   Spacer()
+                    }.offset( y: 50.0)
+
                                  Spacer()
         }
 
@@ -97,8 +130,40 @@ struct Dash: View {
                             }
                             
 
-                    }//.padding()
-                    // .background(Color.white)
+                     }
+            
+            VStack{
+                Text("abc").foregroundColor(.black)
+                HStack
+                    {
+                        VStack{
+                            Image("family_members").resizable().frame(width: 100, height: 100, alignment: .center)
+                            Text("family_members").foregroundColor(.black)
+                        }
+                        
+                        Spacer()
+                        
+                        VStack{
+                        Image("prescription").resizable().frame(width: 100, height: 100, alignment: .center)
+                        Text("prescription").foregroundColor(.black)
+                        }
+                }.padding([.leading,.trailing],40.0)
+                HStack
+                    {
+                        VStack{
+                            Image("doctors").resizable().frame(width: 100, height: 100, alignment: .center)
+                            Text("doctors").foregroundColor(.black)
+                        }
+                         Spacer()
+                        VStack{
+                        Image("medicines").resizable().frame(width: 100, height: 100, alignment: .center)
+                        Text("medicines").foregroundColor(.black)
+                        }
+                }.padding([.leading,.trailing],40.0)
+                
+                Spacer()
+            }
+
                      Spacer()
             
         

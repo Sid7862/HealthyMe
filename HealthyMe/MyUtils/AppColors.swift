@@ -25,4 +25,11 @@ class AppColors {
     public static let barCancelColor = UIColor(red: 31.0/255.0, green: 91.0/255.0, blue: 133.0/255.0, alpha: 1.0)
     public static let transparentPink = UIColor.init(red: 254/255, green: 245/255, blue: 250/255, alpha: 0.8);
     */
+    public static let subHeaderTitle = AppUtils.hexStringToUIColor(hex: "#555555")
+    public static let HeaderTitle = AppUtils.hexStringToUIColor(hex: "#000000")
+    public static let appBackground = AppUtils.hexStringToUIColor(hex: "#F0F0F0")
+
+    
+    
+
 }

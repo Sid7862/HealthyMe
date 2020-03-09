@@ -44,6 +44,27 @@ extension Relationship
             return ""
         }
 }
+    
+    static func realationshipStringFromID(valueString: String) -> Gender.RawValue {
+                  
+               switch(valueString){
+                   
+               case "1":
+                   return Relationship.Myself.rawValue
+               case "2":
+                   return Relationship.Father.rawValue
+               case "3":
+                    return Relationship.Mother.rawValue
+               case "4":
+                    return Relationship.Sibling.rawValue
+               case "5":
+               return Relationship.GrandParent.rawValue
+                
+                
+               default:
+                   return ""
+               }
+       }
 }
 
 

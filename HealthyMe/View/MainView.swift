@@ -20,16 +20,23 @@ struct MainView: View {
                 
                 TabView(selection: $selectedView)
                 {
+                    
+                    TestUIView()
+                    .tabItem {
+                        Image(systemName: "1.circle")
+                        Text("Dashboard")
+                    }.tag(0)
+                    
                            AddUserUI()
                                .tabItem {
                                    Image(systemName: "1.circle")
                                    Text("First")
-                               }.tag(0)
-                           Text("Second View")
+                               }.tag(1)
+                           AddBloodPressureUI()
                                .tabItem {
                                    Image(systemName: "2.circle")
                                    Text("Second")
-                               }.tag(1)
+                               }.tag(2)
                        }
                    }
                 

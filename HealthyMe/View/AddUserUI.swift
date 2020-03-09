@@ -30,9 +30,13 @@ struct AddUserUI: View {
             {
         ZStack
             {
-                Color.gray.edgesIgnoringSafeArea(.top)
+               // Color.gray.edgesIgnoringSafeArea(.top)
+                Color(AppColors.appBackground).edgesIgnoringSafeArea(.all)
                 
-             
+            VStack
+                {
+                    
+                    
            Form
             {
            
@@ -86,9 +90,11 @@ struct AddUserUI: View {
             
             
            }
-                
+               
+                ZStack
+                    {
                 RoundedRectangle(cornerRadius: 10)
-                                               .foregroundColor(.white).shadow(color: .white, radius: 10, x: 1, y: 0).frame(width: UIScreen.main.bounds.width-80, height: 50, alignment: .center)
+                    .foregroundColor(.white).shadow(color: .white, radius: 10, x: 1, y: 0).frame(width: UIScreen.main.bounds.width-80, height: 50, alignment: .center).offset(y: -8.0)
                 Button(action: {
                     
                   print(Gender.genderID(valueString: Constants.genderOptions[self.selectedGenderIndex]))
@@ -98,10 +104,17 @@ struct AddUserUI: View {
                  DispatchQueue.global(qos: .background).async
                         {
                         
+                            
                         
+                            
                             let realm = try! Realm();
-                                  
+                            
+                            
                             let self_profile = "0";
+                            
+                            
+                            
+                            
                             if let profile = realm.objects(ProfileModel.self).filter("self_profile == '\(self_profile)'").first
                              
                             {
@@ -114,6 +127,18 @@ struct AddUserUI: View {
                                 profileModel.prof_blood_grp = BloodGroup.bloodGroupID(valueString: Constants.bloodGroup[self.selectedBloodGroupIndex])
                                 profileModel.prof_dob = self.birthday
                                 profileModel.prof_gender = Gender.genderID(valueString: Constants.genderOptions[self.selectedGenderIndex])
+                                do {
+                                try realm.write {
+                                                             
+                                    realm.add(profileModel, update: .modified)
+                                    
+                                }
+                                   }
+                                catch let error as NSError
+                                {
+                                    print(error.description)
+                                }
+
                             }
                             else
                             {
@@ -158,8 +183,9 @@ struct AddUserUI: View {
                 })
                 {
                     Text("Save").font(.headline).foregroundColor(Color("background"))
-                }.frame(width: UIScreen.main.bounds.width-80, height: 50, alignment: .center)
-          
+                }.frame(width: UIScreen.main.bounds.width-80, height: 50, alignment: .center).offset(y: -8.0)
+                }
+                }
         
         }
         .navigationBarTitle("Add Profile",displayMode: .inline)

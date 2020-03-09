@@ -34,6 +34,23 @@ extension Gender
             return ""
         }
 }
+    static func genderStringFromID(valueString: String) -> Gender.RawValue {
+               
+            switch(valueString){
+                
+            case "1":
+                return Gender.Male.rawValue
+            case "2":
+                return Gender.Female.rawValue
+            case "3":
+                  return Gender.Other.rawValue
+             
+            default:
+                return ""
+            }
+    }
+
+    
 }
 
 
