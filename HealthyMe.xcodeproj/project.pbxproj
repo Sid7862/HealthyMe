@@ -23,6 +23,9 @@
 		BA9D54A22414D36A0044D295 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D54A12414D36A0044D295 /* ProfileData.swift */; };
 		BA9D54A42414D63C0044D295 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D54A32414D63C0044D295 /* AppUtils.swift */; };
 		BA9D54A62414DD200044D295 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D54A52414DD200044D295 /* Relationship.swift */; };
+		BA9D54A82414E1FA0044D295 /* AllProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D54A72414E1FA0044D295 /* AllProfiles.swift */; };
+		BA9D54AA2414E4DE0044D295 /* BindableResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D54A92414E4DE0044D295 /* BindableResults.swift */; };
+		BA9D54AC241548E90044D295 /* AddBloodPressureUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D54AB241548E80044D295 /* AddBloodPressureUI.swift */; };
 		BAAD102E24030776009DA3CC /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102D24030776009DA3CC /* ProfileModel.swift */; };
 		BAAD103024030BAA009DA3CC /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102F24030BAA009DA3CC /* Gender.swift */; };
 		D639EB7923FF08BC00611D2B /* SideMenuUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D639EB7823FF08BC00611D2B /* SideMenuUI.swift */; };
@@ -62,6 +65,9 @@
 		BA9D54A12414D36A0044D295 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		BA9D54A32414D63C0044D295 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		BA9D54A52414DD200044D295 /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		BA9D54A72414E1FA0044D295 /* AllProfiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProfiles.swift; sourceTree = "<group>"; };
+		BA9D54A92414E4DE0044D295 /* BindableResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableResults.swift; sourceTree = "<group>"; };
+		BA9D54AB241548E80044D295 /* AddBloodPressureUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodPressureUI.swift; sourceTree = "<group>"; };
 		BAAD102D24030776009DA3CC /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		BAAD102F24030BAA009DA3CC /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		D639EB7823FF08BC00611D2B /* SideMenuUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuUI.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 			children = (
 				BAAD102D24030776009DA3CC /* ProfileModel.swift */,
 				BA9D54A12414D36A0044D295 /* ProfileData.swift */,
+				BA9D54A92414E4DE0044D295 /* BindableResults.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +161,8 @@
 				BA619C79241167EC0084D5C0 /* AddMedicine.swift */,
 				BA619C7D2412E48D0084D5C0 /* AddUserUI.swift */,
 				BA014E232414A00C009EAAA5 /* MainView.swift */,
+				BA9D54A72414E1FA0044D295 /* AllProfiles.swift */,
+				BA9D54AB241548E80044D295 /* AddBloodPressureUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,6 +343,7 @@
 				D639EB7923FF08BC00611D2B /* SideMenuUI.swift in Sources */,
 				BA68C8152402C289003EE01B /* RegisterUI.swift in Sources */,
 				BA619C7A241167EC0084D5C0 /* AddMedicine.swift in Sources */,
+				BA9D54A82414E1FA0044D295 /* AllProfiles.swift in Sources */,
 				D6F4C6EC23F90E3300E54331 /* AppDelegate.swift in Sources */,
 				BA014E272414BEA6009EAAA5 /* BloodGroup.swift in Sources */,
 				D639EB7B24003D0000611D2B /* BaseSwiftUI.swift in Sources */,
@@ -345,6 +355,7 @@
 				D678D4A423F9BB220010D6F0 /* DashboardView.swift in Sources */,
 				BA9D54A42414D63C0044D295 /* AppUtils.swift in Sources */,
 				D6EB73CB2401347D00E41A09 /* AddFamilyMemberUI.swift in Sources */,
+				BA9D54AA2414E4DE0044D295 /* BindableResults.swift in Sources */,
 				BA4D827924072BCC0022A4C1 /* ActyIndicator.swift in Sources */,
 				D639EB7D24003FD500611D2B /* Dashboard.swift in Sources */,
 				BA014E242414A00D009EAAA5 /* MainView.swift in Sources */,
@@ -356,6 +367,7 @@
 				BAAD103024030BAA009DA3CC /* Gender.swift in Sources */,
 				D639EB7F2400423100611D2B /* Test.swift in Sources */,
 				D6F4C6F023F90E3300E54331 /* IntroView.swift in Sources */,
+				BA9D54AC241548E90044D295 /* AddBloodPressureUI.swift in Sources */,
 				D678D4A023F9A7530010D6F0 /* Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
