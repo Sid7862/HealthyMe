@@ -21,7 +21,7 @@ struct TestUIView: View {
             
 
                 VStack{
-                                 HStack
+                                HStack
                                     {
                                         Button(action: { withAnimation{self.showMenu.toggle()}})
                                         {
@@ -57,26 +57,26 @@ struct TestUIView: View {
                                        {
                                            VStack{
                                                Image("family_members").resizable().frame(width: 100, height: 100, alignment: .center)
-                                               Text("family_members").foregroundColor(.black)
+                                               Text("Family Members").foregroundColor(.black)
                                            }
                                            
                                            Spacer()
                                            
                                            VStack{
                                            Image("prescription").resizable().frame(width: 100, height: 100, alignment: .center)
-                                           Text("prescription").foregroundColor(.black)
+                                           Text("Prescription").foregroundColor(.black)
                                            }
                                    }.padding([.leading,.trailing],40.0)
                                    HStack
                                        {
                                            VStack{
                                                Image("doctors").resizable().frame(width: 100, height: 100, alignment: .center)
-                                               Text("doctors").foregroundColor(.black)
+                                               Text("Doctor").foregroundColor(.black)
                                            }
                                             Spacer()
                                            VStack{
                                            Image("medicines").resizable().frame(width: 100, height: 100, alignment: .center)
-                                           Text("medicines").foregroundColor(.black)
+                                           Text("Medicine").foregroundColor(.black)
                                            }
                                    }.padding([.leading,.trailing],40.0)
                                    
@@ -132,37 +132,6 @@ struct Dash: View {
 
                      }
             
-            VStack{
-                Text("abc").foregroundColor(.black)
-                HStack
-                    {
-                        VStack{
-                            Image("family_members").resizable().frame(width: 100, height: 100, alignment: .center)
-                            Text("family_members").foregroundColor(.black)
-                        }
-                        
-                        Spacer()
-                        
-                        VStack{
-                        Image("prescription").resizable().frame(width: 100, height: 100, alignment: .center)
-                        Text("prescription").foregroundColor(.black)
-                        }
-                }.padding([.leading,.trailing],40.0)
-                HStack
-                    {
-                        VStack{
-                            Image("doctors").resizable().frame(width: 100, height: 100, alignment: .center)
-                            Text("doctors").foregroundColor(.black)
-                        }
-                         Spacer()
-                        VStack{
-                        Image("medicines").resizable().frame(width: 100, height: 100, alignment: .center)
-                        Text("medicines").foregroundColor(.black)
-                        }
-                }.padding([.leading,.trailing],40.0)
-                
-                Spacer()
-            }
 
                      Spacer()
             
