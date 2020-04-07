@@ -1,0 +1,157 @@
+{
+    "status" : "1",
+    "data":
+    {
+        "type": "1",
+        "doctor_id": "1",
+        "doctor_name": "Kollan Karmakar",
+        "appointment_id": "1",
+        "customer_name": "Sahibuddin Ahmed",
+        "medicine":
+        [
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Calpol",
+            "med_type" : "1",
+            "med_frequency" : "20",
+            "med_consume_per_time" : "1",
+            "med_consume_per_day" : "4",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            },
+            {
+            "med_id" : "1",
+            "med_name" : "Paracetamol",
+            "med_type" : "1",
+            "med_frequency" : "15",
+            "med_consume_per_time" : "3",
+            "med_consume_per_day" : "3",
+            "med_time" : "1|2|3",
+            "med_meal_type" : "1"
+            }
+        ]
+    }
+    
+}
+
+

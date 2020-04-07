@@ -12,6 +12,8 @@
 		BA014E222414475E009EAAA5 /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA014E1F2414475E009EAAA5 /* JSONUtils.swift */; };
 		BA014E242414A00D009EAAA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA014E232414A00C009EAAA5 /* MainView.swift */; };
 		BA014E272414BEA6009EAAA5 /* BloodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA014E262414BEA6009EAAA5 /* BloodGroup.swift */; };
+		BA0D7E5E2422B88F0068FAE5 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D7E5C2422B88E0068FAE5 /* Parsable.swift */; };
+		BA0D7E5F2422B88F0068FAE5 /* appointment.json in Resources */ = {isa = PBXBuildFile; fileRef = BA0D7E5D2422B88E0068FAE5 /* appointment.json */; };
 		BA4D827524072BCC0022A4C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D826F24072BCC0022A4C1 /* Constants.swift */; };
 		BA4D827624072BCC0022A4C1 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D827024072BCC0022A4C1 /* KeychainManager.swift */; };
 		BA4D827724072BCC0022A4C1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D827124072BCC0022A4C1 /* AppColors.swift */; };
@@ -28,6 +30,8 @@
 		BA9D54AC241548E90044D295 /* AddBloodPressureUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D54AB241548E80044D295 /* AddBloodPressureUI.swift */; };
 		BAAD102E24030776009DA3CC /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102D24030776009DA3CC /* ProfileModel.swift */; };
 		BAAD103024030BAA009DA3CC /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD102F24030BAA009DA3CC /* Gender.swift */; };
+		BAF72000241967290004E6EB /* QRCodeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF71FFF241967290004E6EB /* QRCodeUIView.swift */; };
+		BAF7202F241CABF20004E6EB /* AppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF7202E241CABF20004E6EB /* AppointmentModel.swift */; };
 		D639EB7923FF08BC00611D2B /* SideMenuUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D639EB7823FF08BC00611D2B /* SideMenuUI.swift */; };
 		D639EB7B24003D0000611D2B /* BaseSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D639EB7A24003D0000611D2B /* BaseSwiftUI.swift */; };
 		D639EB7D24003FD500611D2B /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D639EB7C24003FD500611D2B /* Dashboard.swift */; };
@@ -54,6 +58,8 @@
 		BA014E1F2414475E009EAAA5 /* JSONUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
 		BA014E232414A00C009EAAA5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BA014E262414BEA6009EAAA5 /* BloodGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodGroup.swift; sourceTree = "<group>"; };
+		BA0D7E5C2422B88E0068FAE5 /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		BA0D7E5D2422B88E0068FAE5 /* appointment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appointment.json; sourceTree = "<group>"; };
 		BA4D826F24072BCC0022A4C1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BA4D827024072BCC0022A4C1 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		BA4D827124072BCC0022A4C1 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 		BA9D54AB241548E80044D295 /* AddBloodPressureUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodPressureUI.swift; sourceTree = "<group>"; };
 		BAAD102D24030776009DA3CC /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		BAAD102F24030BAA009DA3CC /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		BAF71FFF241967290004E6EB /* QRCodeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUIView.swift; sourceTree = "<group>"; };
+		BAF7202E241CABF20004E6EB /* AppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentModel.swift; sourceTree = "<group>"; };
 		D639EB7823FF08BC00611D2B /* SideMenuUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuUI.swift; sourceTree = "<group>"; };
 		D639EB7A24003D0000611D2B /* BaseSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSwiftUI.swift; sourceTree = "<group>"; };
 		D639EB7C24003FD500611D2B /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
@@ -138,6 +146,9 @@
 		BAAD102A2403051D009DA3CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA0D7E5C2422B88E0068FAE5 /* Parsable.swift */,
+				BA0D7E5D2422B88E0068FAE5 /* appointment.json */,
+				BAF7202E241CABF20004E6EB /* AppointmentModel.swift */,
 				BAAD102D24030776009DA3CC /* ProfileModel.swift */,
 				BA9D54A12414D36A0044D295 /* ProfileData.swift */,
 				BA9D54A92414E4DE0044D295 /* BindableResults.swift */,
@@ -163,6 +174,7 @@
 				BA014E232414A00C009EAAA5 /* MainView.swift */,
 				BA9D54A72414E1FA0044D295 /* AllProfiles.swift */,
 				BA9D54AB241548E80044D295 /* AddBloodPressureUI.swift */,
+				BAF71FFF241967290004E6EB /* QRCodeUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F4C6F823F90E4D00E54331 /* LaunchScreen.storyboard in Resources */,
+				BA0D7E5F2422B88F0068FAE5 /* appointment.json in Resources */,
 				D6F4C6F523F90E4D00E54331 /* Preview Assets.xcassets in Resources */,
 				D6F4C6F223F90E4D00E54331 /* Assets.xcassets in Resources */,
 			);
@@ -340,8 +353,10 @@
 				BA4D827524072BCC0022A4C1 /* Constants.swift in Sources */,
 				BAAD102E24030776009DA3CC /* ProfileModel.swift in Sources */,
 				BA014E222414475E009EAAA5 /* JSONUtils.swift in Sources */,
+				BAF72000241967290004E6EB /* QRCodeUIView.swift in Sources */,
 				D639EB7923FF08BC00611D2B /* SideMenuUI.swift in Sources */,
 				BA68C8152402C289003EE01B /* RegisterUI.swift in Sources */,
+				BA0D7E5E2422B88F0068FAE5 /* Parsable.swift in Sources */,
 				BA619C7A241167EC0084D5C0 /* AddMedicine.swift in Sources */,
 				BA9D54A82414E1FA0044D295 /* AllProfiles.swift in Sources */,
 				D6F4C6EC23F90E3300E54331 /* AppDelegate.swift in Sources */,
@@ -354,6 +369,7 @@
 				BA014E202414475E009EAAA5 /* APIUtils.swift in Sources */,
 				D678D4A423F9BB220010D6F0 /* DashboardView.swift in Sources */,
 				BA9D54A42414D63C0044D295 /* AppUtils.swift in Sources */,
+				BAF7202F241CABF20004E6EB /* AppointmentModel.swift in Sources */,
 				D6EB73CB2401347D00E41A09 /* AddFamilyMemberUI.swift in Sources */,
 				BA9D54AA2414E4DE0044D295 /* BindableResults.swift in Sources */,
 				BA4D827924072BCC0022A4C1 /* ActyIndicator.swift in Sources */,

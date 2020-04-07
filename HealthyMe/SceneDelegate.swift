@@ -52,6 +52,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         */
         
+//        let val : DataModel = Parsable.load("appointment.json")
+//        
+//       let jsonEncoder = JSONEncoder()
+//        do {
+//            let jsonData = try jsonEncoder.encode(val)
+//            guard let jsonString = String(data: jsonData, encoding: .utf8) else {return}
+//            print("JSON String : " + jsonString)
+//        }
+//        catch {
+//        }
+//         
+       
+        
+        
+        
         let notificationCenter =  UNUserNotificationCenter.current()
         
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
@@ -70,7 +85,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } 
         
         
-        let contentView = MainView()
+        let contentView =  QRCodeUIView() //MainView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
